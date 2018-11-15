@@ -29,12 +29,20 @@ require_once("config.php");
 //$aluno ->insert();
 //echo $aluno;
 
+//ALTERAR USUARIO
+//$usuario = new Usuario();
+//$usuario->loadById(6);
+//$usuario->update("Professor","321");
+//echo $usuario;
+
+
+//DELETAR 
 
 $usuario = new Usuario();
-$usuario->loadById(6);
-$usuario->update("Professor","321");
-
+$usuario -> loadById(4);
+$usuario -> delete();
 echo $usuario;
+
 
 
 //$sql = new Sql();
